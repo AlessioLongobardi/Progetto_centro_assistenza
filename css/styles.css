@@ -1,0 +1,158 @@
+﻿/* Reset di base per i margini che per il padding */
+* {
+    margin: 0; /* margini esterni del documento*/
+    padding: 0;  /*margini interni*/
+    box-sizing: border-box; /*include nel calcolo del documento bordi ew margini */
+}
+/*Stile del corpo del documento HTML*/
+body {
+    font-family:Roboto, Arial; /*Modifica il font*/
+    line-height: 1.6; /*Dimensioni del font*/
+    background-color: #f4f4f4; /*Sfondo grigio chiaro in esadecimale*/
+    color: #333;  /*Serve per cambiare colore al font*/
+}
+
+/*Stile per i collegamenti (home ecc ecc)*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Stile per il logo (bisogna dichiarare la classe con il nome in html)*/
+.logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    margin-right:20px;
+    border-radius: 50%; /*Pr fare i bordi/logo a cerchio (50%)*/
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+/*Stile intestazione del sito*/
+header {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 12px 0;
+    border-bottom: 4px solid #004999;
+}
+
+/*Stile per il menù di navigazione*/
+nav {
+    display: flex; /*Mette gli elementi su un'unica riga*/
+    justify-content: center; /*Serve per allineare gli elementi al centro*/
+    align-items: center; /*Allineamento verticale*/
+    padding:0 30px;
+}
+
+/*Stile per elementi di navigazione (inserire prima il tag padre e poi figlio come sotto)*/
+nav ul {
+    display: flex;
+    list-style: none; /*Rimuove i pallini dalle liste*/
+}
+
+/*Stile dei singoli li di nav*/
+nav ul li {
+    margin:0 1.5rem; /*Modifica la spaziatura tra gli elementi*/
+}
+
+/*Stile dei collegamenti ipertestuali*/
+nav ul li a {
+    font-size: 16px;
+    color:gold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /*Serve per creare l'animazione quando ci passi sopra*/
+}
+
+/*Hover sui collegamenti (cambio colore quando si passa sopra il link)*/
+nav ul li a:hover {
+    color: darkgoldenrod;
+    }
+
+/*Stile per il main*/
+main {
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0 4px 8px; /*Inserisce delle ombre, Top-left-right-bottom*/
+    max-width: 1200px; /*per espandere o diminuire i pixel di un blocco */
+    margin: 10px auto 10px;
+}
+
+/*Modifica titoli main*/
+main h2 {
+    color: #0066cc;
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+/*Modifica paragrafi di main*/
+main p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+/*Modifica lista main*/
+main ul {
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+main ul li {
+    margin-bottom: 12px;
+}
+
+/*Stile per le immagini di main*/
+main img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 0 auto 16px; /*auto edita il valore di entrambi*/
+    display: block; /*block prende tutta la lina*/
+}
+
+/*footer*/
+footer {
+    background-color: #004999;
+    text-align:center; /*allinea il testo*/
+    padding: 16px;
+    color: #fff;
+    margin-top: 32px;
+    font-size: 14px;
+}
+
+/*Stile per il form*/
+form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/*Stile per i campi del form*/
+form input, form textarea { /*si possono inserire con la virgola più tag*/
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/*Stile per il pulsante del form*/
+form button {
+    background-color: #0066cc;
+    color:white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+/*hover sul pulsante del form*/
+form button:hover {
+    background-color: #004999;
+}
